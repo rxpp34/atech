@@ -1,0 +1,2 @@
+class MailSoftwareAsset < Asset
+end

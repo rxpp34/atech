@@ -1,0 +1,110 @@
+fr:
+
+  activerecord:
+    models:
+      monthly_report:
+        one: Visite mensuelle
+        other: Visites mensuelles
+      maintenance_ticket:
+        one: Ticket de maintenance
+        other: Tickets de maintenance
+      domain_asset:
+        one: Domaine
+        other: Domaines
+      server_asset:
+        one: Serveur
+        other: Serveurs
+      firewall_asset:
+        one: Firewall
+        other: Firewalls
+      phone_asset:
+        one: Téléphonie
+        other: Téléphonies
+      mail_software_asset:
+        one: Logiciel de messagerie
+        other: Logiciels de messagerie
+      uncategorized_asset:
+        one: Autre objet
+        other: Autres objet
+      antivirus_asset: 'Antivirus'
+      disk:
+        one: Partition
+        other: Partitions
+
+    attributes:
+      monthly_report:
+        client_email: 'Email du client'
+        server_asset: Serveur
+        tech: Intervenant
+        notes: Remarques
+        last_backup_state: État de la veille
+        last_backup_reason: Raison
+        previous_backups_state: État des derniers jours
+        previous_backups_reason: Raison
+        restore_state: Résultat
+        restore_reason: Raison
+        hard_drives_state: Disque durs
+        hard_drives_down: Nb de disques HS
+        software_working: Logiciel fonctionnel
+        licence_up_to_date: "Logiciel à jour (<5jrs)"
+      admin_user:
+        username: Login
+      maintenance_ticket:
+        confidential_info: Infos confidentielles
+        maintained_by: Type d'intervention
+        maintenance_date: Date d'intervention
+        comment: Solutions Apportées
+        state: État
+        created_at: Créé le
+        updated_at: Mis à jour le
+        description: Demandes
+        assigned_to: Technicien
+        duration: Durée de l'intervention
+        recipients: Destinataires
+      client:
+        name: Nom
+        comment: Commentaires
+        created_at: Créé le
+        updated_at: Mis à jour le
+        assets: "Objets"
+        under_contract: "Sous-contrat"
+      uncategorized_asset:
+        name: Nom
+        expiration_date: "Date d'expiration"
+      antivirus_asset:
+        expiration_date: "Date d'expiration"
+        quantity: Quantité
+        name: Nom
+      domain_asset:
+        name: Nom
+        expiration_date: "Date d'expiration"
+        quantity: Quantité d'emails
+      mail_software_asset:
+        name: Nom
+        expiration_date: "Date d'expiration"
+        quantity: Quantité d'emails
+      server_asset:
+        expiration_date: "Date d'expiration"
+        name: Nom du serveur
+        quantity: Capacité mémoire
+      firewall_asset:
+        expiration_date: "Date d'expiration"
+        name: Nom
+      phone_asset:
+        expiration_date: "Date d'expiration"
+        name: Nom
+      disk:
+        state: État
+        name: Partition
+        total_storage: Capacité totale
+        storage_left: Capacité restante
+
+  formtastic:
+    :yes: 'Oui'
+    :no: 'Non'
+    :create: 'Créer %{model}'
+    :update: 'Mettre à jour %{model}'
+    :submit: 'Valider %{model}'
+    :cancel: 'Annuler %{model}'
+    :reset: 'Réinitialiser %{model}'
+    :required: 'Requis'

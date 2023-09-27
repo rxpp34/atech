@@ -1,0 +1,30 @@
+:css
+  .red { color: red; }
+
+%p Bonjour #{@ticket.client_name},
+
+- if @ticket.state != "Fermé"
+  %p
+    Votre demande a bien été prise en compte sous le
+    %b « numéro #{@ticket.id} ».
+
+  %p
+    Notre équipe technique revient vers vous dans les meilleurs délais.
+
+%p
+  Vous trouverez ci-dessous un récapitulatif de votre ticket :
+
+%ul
+  %li
+    = "Demande(s):"
+    = simple_format @ticket.description
+  %li
+    = "Solution apportée(s):"
+    = simple_format @ticket.comment
+
+%p
+  %span.red ATTENTION
+  %span : Merci de ne pas répondre à ce mail, votre demande ne sera pas traitée
+
+%p
+  = image_tag(ticket_visit_card_url(@ticket))

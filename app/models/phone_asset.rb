@@ -1,0 +1,2 @@
+class PhoneAsset < Asset
+end

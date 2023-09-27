@@ -1,0 +1,2 @@
+class AntivirusAsset < Asset
+end

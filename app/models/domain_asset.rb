@@ -1,0 +1,2 @@
+class DomainAsset < Asset
+end

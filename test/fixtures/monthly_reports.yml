@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  server_asset_id: 
+  date: 2015-09-30
+  pdf: MyString
+  tech: MyString
+  last_backup_state: MyString
+  last_backup_reason: MyText
+  previous_backups_state: MyString
+  previous_backups_reason: MyText
+  restore_state: MyString
+  restore_reason: MyText
+  notes: MyText
+
+two:
+  server_asset_id: 
+  date: 2015-09-30
+  pdf: MyString
+  tech: MyString
+  last_backup_state: MyString
+  last_backup_reason: MyText
+  previous_backups_state: MyString
+  previous_backups_reason: MyText
+  restore_state: MyString
+  restore_reason: MyText
+  notes: MyText

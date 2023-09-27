@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  total_storage: 1
+  used_storage: 1
+  server_asset_id: 
+
+two:
+  name: MyString
+  total_storage: 1
+  used_storage: 1
+  server_asset_id: 

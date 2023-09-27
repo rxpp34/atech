@@ -1,0 +1,23 @@
+<h2><%= pluralize(@tickets.size, "ticket", "tickets") %> état "Ouvert - Urgent"</h2>
+
+<table>
+  <tr>
+    <th>Numéro</th>
+    <th>Client</th>
+    <th>Technicien</th>
+    <th>Demandes</th>
+    <th>Solutions Apportées</th>
+    <th>Créé le</th>
+  </tr>
+
+  <% @tickets.each do |ticket| %>
+    <tr>
+      <td style="border: 1px solid black;"><%= link_to ticket.id, polymorphic_url([:admin, ticket], protocol: 'https') %></td>
+      <td style="border: 1px solid black;"><%= ticket.client_name %></td>
+      <td style="border: 1px solid black;"><%= ticket.assigned_to.join(', ') if ticket.assigned_to %></td>
+      <td style="border: 1px solid black;"><%= simple_format ticket.description %></td>
+      <td style="border: 1px solid black;"><%= simple_format ticket.comment %></td>
+      <td style="border: 1px solid black;"><%= l ticket.created_at %></td>
+    </tr>
+  <% end %>
+</table>

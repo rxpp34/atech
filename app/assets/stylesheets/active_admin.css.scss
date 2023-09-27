@@ -1,0 +1,26 @@
+// Active Admin CSS Styles
+@import "active_admin/mixins";
+@import "active_admin/base";
+@import "select2/select2.css";
+
+// To customize the Active Admin interfaces, add your
+// styles here:
+#maintenance_ticket_duration {
+  width: 180px;
+}
+
+.scope {
+  font-size: 1.3em;
+}
+
+.scopes li .count {
+  font-weight: bold;
+}
+
+.scope.urgent .count {
+  color: red;
+}
+
+.scope.ouvert .count {
+  color: orange;
+}

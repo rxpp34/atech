@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  client: 
+  name: MyString
+  description: MyText
+  expiration_date: 2015-03-04
+
+two:
+  client: 
+  name: MyString
+  description: MyText
+  expiration_date: 2015-03-04

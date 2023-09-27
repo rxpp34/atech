@@ -1,0 +1,2 @@
+class FirewallAsset < Asset
+end

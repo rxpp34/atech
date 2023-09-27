@@ -1,0 +1,17 @@
+<h2><%= pluralize(@assets.size, "objet expire", "objets expirent") %> bientôt</h2>
+
+<table>
+  <tr>
+    <th>Nom</th>
+    <th>Date d'expiration</th>
+    <th>client</th>
+  </tr>
+
+  <% @assets.each do |asset| %>
+    <tr>
+      <td><%= link_to asset.name, polymorphic_url([:admin, asset], protocol: 'https') %></td>
+      <td><%= l asset.expiration_date, format: :long %></td>
+      <td><%= asset.client_name %></td>
+    </tr>
+  <% end %>
+</table>
